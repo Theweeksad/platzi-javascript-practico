@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>figuras geometricas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1 class="header-title">
+            Figuras geometricas
+        </h1>
+        <p class="header-paragraph">Este es el primer taller del curso practico de javascript</p>
+    </header>
+    <main class="main-container">
+        <section class="main-container-cuadrado"><!--cuadrado-->
+            <h2>Calculo el área y perimetro de un cuadrado.</h2>
+            <form action="">
+                <label for="InputCuadrado">Escribe cuánto mide cada lado de tu cuadrado</label>
+                <input class="main-container-input" id="InputCuadrado" type="number">
+                <button class="main-container-button" type="button" onclick="calcularPerimetroCuadrado()">calcular el perimetro</button>
+                <button class="main-container-button" type="button" onclick="calculaAreaCuadrado()">Calcular el área</button>
+            </form>
+        </section>
+        <section class="main-container-triangulo"><!--triangulo-->
+            <h2>Calculo el área y perimetro de un triangulo.</h2>
+            <form action="">
+                <div>
+                    <label for="InputTrianguloLado1">Lado 1</label>             
+                    <input class="main-container-input" id="InputTrianguloLado1" type="number">  
+                    <select class="container--select" id="InputUnidadT">
+                        <option selected value="cm">cm</option>
+                        <option value="mts">mts</option>
+                        <option value="kms">kms</option>                                 
+                    </select>
+                </div>
+                <div>       
+                    <label for="InputTrianguloLado2">Lado 2</label>        
+                    <input class="main-container-input" id="InputTrianguloLado2" type="number">    
+                    <select class="container--select" id="InputUnidadT">
+                        <option selected value="cm">cm</option>
+                        <option value="mts">mts</option>
+                        <option value="kms">kms</option>                                
+                    </select>
+                </div>
+                <div>
+                    <label for="InputTrianguloBase">Base</label>
+                    <input  class="main-container-input" id="InputTrianguloBase" type="number">
+                    <select class="container--select" id="InputUnidadT">
+                        <option selected value="cm">cm</option> 
+                        <option value="mts">mts</option>
+                        <option value="kms">kms</option>                                 
+                    </select>
+                </div>
+                <div>
+                    <label for="InputTrianguloAltura">Altura</label>
+                    <input id="InputTrianguloAltura" type="number">
+                </div>
+                <div>
+                    <button class="main-container--butto-triangulo" type="button" onclick="calculaPerimetroTriangulo()">calcular el perimetro</button>
+                    <button class="main-container--butto-triangulo" type="button" onclick="calculaAreaTriangulo()">Calcular el área</button>
+                </div>
+            </form>
+        </section>
+        <section class="main-container-circulo">
+            <h2>Calculo el perimetro,área y diametro del circulo.</h2>
+            <form action="">
+                <label for="InputCirculo">Escribe los datos del circulo.<label>
+                <input class="main-container-input" id="InputCirculo" type="number">
+                <button class="main-container-button" type="button" onclick="calcularPerimetroCirculo()">calcular el perimetro</button>
+                <button class="main-container-button" type="button" onclick="calculaAreaCirculo()">Calcular el área</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Siguenos en nuestras redes</p>
+    </footer>
+    <script src="./figuras.js"></script>
+</body>
+</html>
